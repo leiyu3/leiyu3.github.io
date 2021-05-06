@@ -1,0 +1,19 @@
+body {
+    color: white;
+    background: black;
+
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+
+.profilepic {
+    max-width: 30%;
+    height: auto;
+}
