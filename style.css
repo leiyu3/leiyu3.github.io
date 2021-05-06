@@ -1,13 +1,13 @@
 body {
     color: white;
-    background: black;
+    background: rgb(13,17,23);
 
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
 }
 
-h1, h2 {
+h1{
     text-align: center;
 }
 
