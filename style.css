@@ -10,6 +10,12 @@ body {
     margin-left: auto;
 }
 
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+
 h1, h2{
     text-align: center;
 }
