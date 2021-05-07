@@ -26,6 +26,7 @@ p {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 2fr 3fr;
     grid-gap: 10px;
+    border: 3px solid red;
 }
