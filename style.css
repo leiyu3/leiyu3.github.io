@@ -22,12 +22,11 @@ h1, h2{
 
 p {
     text-align:justify;
-    padding: 0;
 }
 
 
 .profilepic {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -40,8 +39,9 @@ p {
 }
 
 .grid-child {
-    border: 3px solid blue;
-
+    text-align: center;
+    margin: 1em;
+    border: 3px solid red;
 }
 
 @media (min-width: 600px){
@@ -50,7 +50,7 @@ p {
     }
 
     .profilepic {
-        width: 80%;
+        max-width: 80%;
         height: auto;
     }
 }
