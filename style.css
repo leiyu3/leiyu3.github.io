@@ -1,13 +1,18 @@
 body {
     color: white;
     background: rgb(13,17,23);
+    font-size: 16pt;
 
     padding: 0;
     margin: 0;
 
-    max-width: 800px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
+}
+
+footer p {
+    text-align: center;
 }
 
 a {
@@ -22,6 +27,7 @@ h1, h2{
 
 p {
     text-align:justify;
+    padding: 0 1em 0 1em;
 }
 
 
@@ -42,13 +48,17 @@ p {
     margin: 1em;
 }
 
-@media (min-width: 600px){
+@media (min-width: 650px){
+    body {
+        font-size: 18pt;
+
+    }
     .grid-container {
         grid-template-columns: 2fr 3fr;
     }
 
     .profilepic {
-        max-width: 80%;
+        max-width: 90%;
         height: auto;
     }
 }
