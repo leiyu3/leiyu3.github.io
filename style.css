@@ -1,6 +1,6 @@
 body {
     color: white;
-    background: rgb(13,17,23);
+    background: #121212;
     font-size: 16pt;
 
     padding: 0;
@@ -17,13 +17,29 @@ footer p {
 
 a {
     text-decoration: none;
-    color: grey;
+    color: #665555;
 }
 
+h4 {
+    padding: 0 0 0 10px;
+    margin: 0;
+}
 
 h1, h2{
     text-align: center;
 }
+
+h3 {
+    color: #34E3E3;
+    padding-left: 6px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-top: 0;
+    margin-top: 0;
+}
+
 
 p {
     text-align:justify;
@@ -32,7 +48,7 @@ p {
 
 
 .profilepic {
-    max-width: 60%;
+    max-width: 35%;
     height: auto;
 }
 
@@ -48,7 +64,17 @@ p {
     margin: 1em;
 }
 
-@media (min-width: 650px){
+.course-code {
+    color: #776677;
+}
+
+/*
+.school-year {
+    color: #34E3E3;
+}
+*/
+
+@media (min-width:1000px){
     body {
         font-size: 18pt;
 
