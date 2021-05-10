@@ -21,7 +21,6 @@ footer p {
 }
 
 a {
-    text-decoration: none;
     color: #665555;
 }
 
@@ -40,9 +39,20 @@ h3 {
     margin-bottom: 10px;
 }
 
+
 ul {
     padding-top: 0;
     margin-top: 0;
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    display:inline;
 }
 
 
