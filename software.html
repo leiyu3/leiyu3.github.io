@@ -8,10 +8,27 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('header.html');
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('footer.html');
+        });
+    </script>
+
+
 </head>
 
 <body>
     <header>
+        <div id="header"></div>
         <h1>Softwares and Hardwares That I Use</h1>
     </header>
 
@@ -61,7 +78,7 @@
 
 
     <footer>
-        <p><a href="index.html">By Lei Yu</a></p>
+        <div id="footer"></div>
     </footer>
 
 

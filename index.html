@@ -16,12 +16,20 @@
             $('#header').load('header.html');
         });
     </script>
+    <script>
+        $(function(){
+            $('#footer').load('footer.html');
+        });
+    </script>
 
 </head>
 
 
 <body>
-    <div id='header'></div>
+    <header>
+        <div id='header'></div>
+        <h1>Lei Yu's Webpage</h1>
+    </header>
 
     <main>
         <div class="grid-container">
@@ -53,7 +61,7 @@
 
 
     <footer>
-        <p><a href="index.html">By Lei Yu</a></p>
+        <div id="footer"></div>
     </footer>
 
 </body>
@@ -69,5 +77,4 @@ book review/summary page
 add a light theme and dark theme
 Favorite show and movie (JoJo)
 put config files on Github
-nav bar on top
 -->
