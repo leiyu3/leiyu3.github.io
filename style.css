@@ -68,6 +68,15 @@ p {
     height: auto;
 }
 
+.showcase{
+    max-width:80%;
+}
+
+.showcase-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
 
 .grid-container {
     display: grid;
@@ -104,9 +113,21 @@ p {
         font-size: 18pt;
 
     }
+
+    .showcase {
+        max-width: 100%;
+    }
+
+    .showcase-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
     .grid-container {
         grid-template-columns: 2fr 3fr;
     }
+
 
     .profilepic {
         max-width: 90%;
