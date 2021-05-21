@@ -140,13 +140,12 @@ p {
     }
 }
 
-
 .entry {
-	border-left: 10px solid darkslategray;
+	border-left: 10px solid #eee;
 	padding: 0px 10px 0px 10px;
 	border-radius: 0 30px 30px 0;
 	margin-bottom: 20px;
-	background-color: #eee;
+	/*background-color: #633333;*/
 	}
 
 .entry h2 {
