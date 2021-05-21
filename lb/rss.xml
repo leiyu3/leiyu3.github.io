@@ -6,8 +6,8 @@
 <title>Your RSS Feed Title</title>
 <description>A brief description of your RSS feed.</description>
 <language>en-us</language>
-<link>http://yourwebsite.com/rss.xml</link>
-<atom:link href="http://yourwebsite.com/rss.xml" rel="self" type="application/rss+xml" />
+<link>http://leiyu3.github.com/lb/rss.xml</link>
+<atom:link href="http://leiyu3.github.com/lb/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
 
@@ -49,4 +49,3 @@
 
 </channel>
 </rss>
-
