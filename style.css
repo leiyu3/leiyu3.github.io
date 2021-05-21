@@ -21,7 +21,12 @@ footer p {
 }
 
 a {
-    color: #665555;
+    /*color: #665555;*/
+    color: royalblue;
+}
+
+a:hover {
+    color: lightblue;
 }
 
 h4 {
@@ -136,20 +141,6 @@ p {
 }
 
 
-
-/*
-html {
-	max-width: 1050px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-	color: #333;
-	padding-bottom: 200px;
-	 }
-
-a {color: royalblue; }
-a:hover {color: lightblue; }
-
 .entry {
 	border-left: 10px solid darkslategray;
 	padding: 0px 10px 0px 10px;
@@ -158,5 +149,7 @@ a:hover {color: lightblue; }
 	background-color: #eee;
 	}
 
-.entry h2 { margin: 5px auto 2px auto; }
-*/
+.entry h2 {
+    margin: 5px auto 2px auto;
+    text-align: left;
+}
