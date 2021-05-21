@@ -11,168 +11,40 @@
 
 <!-- LB -->
 
-<item>
-<title>16th try</title>
-<guid>leiyu3.github.com/2021.html#16th-try</guid>
-<pubDate>Thu, 20 May 2021 19:57:46 -0400</pubDate>
-<description><![CDATA[
-<p>id as footer</p>
-]]></description>
-</item>
-
-
-<item>
-<title>15th try</title>
-<guid>leiyu3.github.com/2021.html#15th-try</guid>
-<pubDate>Thu, 20 May 2021 19:54:54 -0400</pubDate>
-<description><![CDATA[
-<p> bug fixes</p>
-]]></description>
-</item>
-
-
-<item>
-<title>14th try</title>
-<guid>leiyu3.github.com/2021.html#14th-try</guid>
-<pubDate>Thu, 20 May 2021 19:53:30 -0400</pubDate>
-<description><![CDATA[
-<p> Should be good now</p>
-]]></description>
-</item>
-
-
-<item>
-<title>13th try</title>
-<guid>leiyu3.github.com/2021.html#13th-try</guid>
-<pubDate>Thu, 20 May 2021 19:45:33 -0400</pubDate>
-<description><![CDATA[
-<p> starting to figure out why it is not working</p>
-]]></description>
-</item>
-
-
-<item>
-<title>12 th try</title>
-<guid>leiyu3.github.com/2021.html#12-th-try</guid>
-<pubDate>Thu, 20 May 2021 19:35:38 -0400</pubDate>
-<description><![CDATA[
-<p> This one have the original footer</p>
-]]></description>
-</item>
-
-
-<item>
-<title>11th</title>
-<guid>leiyu3.github.com/2021.html#11th</guid>
-<pubDate>Thu, 20 May 2021 19:32:36 -0400</pubDate>
-<description><![CDATA[
-<p>11th</p>
-]]></description>
-</item>
-
-
-<item>
-<title>10th try</title>
-<guid>leiyu3.github.com/2021.html#10th-try</guid>
-<pubDate>Thu, 20 May 2021 19:29:27 -0400</pubDate>
-<description><![CDATA[
-<p> adding lines</p>
-]]></description>
-</item>
-
-
-<item>
-<title>9th try?</title>
-<guid>leiyu3.github.com/2021.html#9th-try</guid>
-<pubDate>Thu, 20 May 2021 19:25:53 -0400</pubDate>
-<description><![CDATA[
-<p>9th try with a different footer.html</p>
-]]></description>
-</item>
-
-
-<item>
-<title>8th test</title>
-<guid>leiyu3.github.com/2021.html#8th-test</guid>
-<pubDate>Thu, 20 May 2021 19:24:13 -0400</pubDate>
-<description><![CDATA[
-<p> Using the default footer<p>
-]]></description>
-</item>
-
-
-<item>
-<title>7th try</title>
-<guid>leiyu3.github.com/2021.html#7th-try</guid>
-<pubDate>Thu, 20 May 2021 19:23:09 -0400</pubDate>
-<description><![CDATA[
-<p> The footer seems to add problem</p>
-]]></description>
-</item>
-
-
-<item>
-<title>6th blog</title>
-<guid>leiyu3.github.com/2021.html#6th-blog</guid>
-<pubDate>Thu, 20 May 2021 19:22:08 -0400</pubDate>
-<description><![CDATA[
-<p>The footer should be added too now</p>
-]]></description>
-</item>
-
-
-<item>
-<title>5th blog</title>
-<guid>leiyu3.github.com/2021.html#5th-blog</guid>
-<pubDate>Thu, 20 May 2021 19:20:40 -0400</pubDate>
-<description><![CDATA[
-<p>This time the header is added</p>
-]]></description>
-</item>
-
-
-<item>
-<title>4th blog</title>
-<guid>leiyu3.github.com/2021.html#4th-blog</guid>
-<pubDate>Thu, 20 May 2021 19:18:41 -0400</pubDate>
-<description><![CDATA[
-<p>This time the second footer script tag is added<p>
-]]></description>
-</item>
-
-
-<item>
-<title>3rd blog</title>
-<guid>leiyu3.github.com/2021.html#3rd-blog</guid>
-<pubDate>Thu, 20 May 2021 19:16:41 -0400</pubDate>
-<description><![CDATA[
-<p>This time the first script tag is added</p>
-]]></description>
-</item>
-
-
-<item>
-<title>2nd-blog</title>
-<guid>leiyu3.github.com/2021.html#2ndblog</guid>
-<pubDate>Thu, 20 May 2021 19:13:35 -0400</pubDate>
-<description><![CDATA[
-<p>basic meta infos</p>
-]]></description>
-</item>
 
 
 
 
 
 
-<item>
-<title>first blog</title>
-<guid>leiyu3.github.com/2021.html#first-blog</guid>
-<pubDate>Thu, 20 May 2021 19:07:01 -0400</pubDate>
-<description><![CDATA[
-<p>Blog with default settings</p>
-]]></description>
-</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </channel>
