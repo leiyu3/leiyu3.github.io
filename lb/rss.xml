@@ -12,6 +12,138 @@
 <!-- LB -->
 
 <item>
+<title></title>
+<guid>leiyu3.github.io/2021.html#setting-up-hibernation-on-arch-linux-with-swap-file</guid>
+<pubDate>Mon, 24 May 2021 09:56:14 -0400</pubDate>
+<description><![CDATA[
+<p>
+Hibernation allows the system to suspend whatever that was in the RAM into the
+disk. This allows the computer to completely shutdown while keeping whatever
+that was on your computer before shutting down. Think of it as putting your
+computer to sleep but The whole computer is not using any power. More information about hibernation can be found in the <a target="_blank" href="https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate">Arch Wiki</a>.
+</p>
+
+<p>
+The article will go through much that was already on the <a
+    target="_blank"
+    href="https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate">Arch
+Wiki</a>. It is highly recommended to go through the wiki first since it is a good skill to have to be able to read the wiki. Come back here if there are some part that wasn't clear. There might be something here that could be helpful.
+</p>
+
+<h1>
+Setting up Swap File
+</h1>
+
+<p>
+The swap file is where the RAM is stored into when the computer hibernates.
+Therefore it is necessary to have it if you are using the hibernate feature. (A
+swap partition can also be used).Setting up the swap file is simple, just type
+the following commands:
+</p>
+
+<p>
+The following command will create a swap file at /, named 'swapfile', with a size of 512Mb. Change these parameters to however you want, but make sure you will have enough swap size.
+</p>
+<code>
+dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress
+</code>
+
+<p>
+The following commands will set the permission of the swapfile, format the swapfile, and the activate the swap file.
+</p>
+<code>
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+</code>
+
+<p>
+Now we will configure your fstab (located at /etc/fstab so that the swap file will be mounted whenever your start your computer. Add in the following line.
+</p>
+
+<code>
+/swapfile none swap defaults 0 0
+</code>
+
+<p>
+If you are only using the swap for hibernation it might be good to reduce the <a target="_blank" href="https://wiki.archlinux.org/title/Swap#Swappiness">swappiness</a>. To set the swappiness permanently do:
+</p>
+
+<code>
+    echo "vm.swappiness=10" > /etc/sysctl.c/99-swappiness.conf
+</code>
+
+
+<h1> Setting up Hibernation with Swap File</h1>
+<p>
+Now we need to fill in the kernel parameters in the bootloader so that the computer knows where to get to your swap file to get everything backinto your RAM.
+</p>
+
+<p>
+The kernel parameter is set in your bootloader entries and it can be found in /boot/loader/entries/*.conf. It should look something like this:
+</p>
+
+<code>
+title Arch Linux
+linux /vmlinuz-linux
+initrd /intel-ucode.img
+initrd /initramfs-linux.img
+options root=PARTUUID=2c51feff-c150-4b36-a6ee-95f04ca51773 rw intel_pstate=no_hwp
+</code>
+
+<p>
+We will be adding these two lines.
+</p>
+
+<code>
+    options resume=UUID=<i>resume_device</i>
+    options resume_offset=<i>swap_file_offset</i>
+</code>
+
+<p>
+<i>resume_device</i>, and <i>swap_file_offset</i> can be determine using these following commands, respectively.
+</p>
+
+<code>
+findmnt -no UUID -T /swapfile
+filefrag -v /swapfile | awk '{ if($1=="0:"){print substr($4, 1, length($4)-2)} }'
+</code>
+
+<p>
+Adding the <i>resume_device</i>, and <i>swap_file_offset</i>, your bootloader entries config should look like this:
+</p>
+
+<code>
+title Arch Linux
+linux /vmlinuz-linux
+initrd /intel-ucode.img
+initrd /initramfs-linux.img
+options root=PARTUUID=2c51feff-c150-4b36-a6ee-95f04ca51773 rw intel_pstate=no_hwp
+options resume=UUID=03d0b18c-15e7-4c54-a2df-7332a878949a
+options resume_offset=77189120
+</code>
+
+<h1>Configure the initrampfs</h1>
+<p>
+Now you just have to add the resume hook in your /etc/mkinitcpio.conf file and regenerate the initramf. Add the resume hook in the mkinitcpio.conf file like so:
+</p>
+
+<code>
+    HOOKS=(base udev autodetect keyboard modconf block filesystems <strong>resume</strong> fsck)
+</code>
+
+<code>
+mkinitcpio -p linux
+</code>
+
+<p>
+That should be it! You should now be able to hibernate.
+</p>
+]]></description>
+</item>
+
+
+<item>
 <title>Welcome To My Blog!</title>
 <guid>leiyu3.github.com/2021.html#welcome-to-my-blog</guid>
 <pubDate>Thu, 20 May 2021 20:56:53 -0400</pubDate>

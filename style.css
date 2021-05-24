@@ -67,6 +67,16 @@ p {
 
 }
 
+pre {
+    display: block;
+    font-family: monospace;
+    font-size: 70%;
+    white-space: pre;
+    margin: 1em 1.2em;
+    border: 1pt solid gray;
+    background-color: rgba(100, 110, 100, 0.5);
+}
+
 
 .profilepic {
     max-width: 35%;

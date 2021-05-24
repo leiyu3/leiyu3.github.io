@@ -2,3 +2,5 @@ Options +Indexes
 AddDescription "Welcome To My Blog!" "welcome-to-my-blog.html" #Thu, 20 May 2021 20:56:53 -0400
 AddDescription "The Case for God's Justice and Love" "the-case-for-gods-justice-and-love.html"
 AddDescription "Quitting League" "quitting-league.html"
+AddDescription "Setting up hibernation on Arch Linux" "setting-up-hibernation-on-arch-linux.html"
+AddDescription "" "setting-up-hibernation-on-arch-linux-with-swap-file.html" #Mon, 24 May 2021 09:56:14 -0400

@@ -1,50 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Lei Yu's Blog</title>
-    <meta charset="utf-8"/>
-    <link rel='stylesheet' type='text/css' href='/style.css'>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-          crossorigin="anonymous"></script>
-
-    <script>
-        $(function(){
-            $('#header').load('/header.html');
-        });
-    </script>
-    <script>
-        $(function(){
-            $('#footer').load('/footer.html');
-        });
-    </script>
-
+<title>Setting up Hibernation on Arch Linux with Swap File</title>
+<link rel='stylesheet' type='text/css' href='/style.css'>
+<meta charset='utf-8'/>
+<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
+<script>$(function(){$('#header').load('/header.html');});</script>
+<script>$(function(){$('#footer').load('/footer.html');});</script>
 </head>
-
 <body>
-    <header>
-        <div id='header'></div>
-        <h1>Lei Yu's Blog</h1>
-    </header>
-
-
-    <!-- LB -->
-<div class='entry'>
-<h2 id='setting-up-hibernation-on-arch-linux-with-swap-file'>Setting Up Hibernation on Arch Linux with Swap File</h2>
-<small>[<a href='#setting-up-hibernation-on-arch-linux-with-swap-file'>link</a>&mdash;<a href='blog/setting-up-hibernation-on-arch-linux-with-swap-file.html'>standalone</a>]</small>
+<header>
+<div id='header'></div>
+<h1>Setting up Hibernation on Arch Linux with Swap File</h1>
+</header>
+<small>[<a href='../2021.html#setting-up-hibernation-on-arch-linux-with-swap-file'>link</a>&mdash;<a href='setting-up-hibernation-on-arch-linux-with-swap-file.html'>standalone</a>]</small>
 <p>
 Hibernation allows the system to suspend whatever that was in the RAM into the
 disk. This allows the computer to completely shutdown while keeping whatever
 that was on your computer before shutting down. Think of it as putting your
-computer to sleep but The whole computer is not using any power. More information about hibernation can be found in the <a target="_blank" href="https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate">Arch Wiki</a>.
+computer to sleep but The whole computer is not using any power. More
+information about hibernation can be found in the <a target="_blank"
+href="https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate">Arch
+Wiki</a>.
 </p>
 
 <p>
-The article will go through much that was already on the <a
-    target="_blank"
+The article will go through much that was already on the <a target="_blank"
     href="https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate">Arch
-Wiki</a>. It is highly recommended to go through the wiki first since it is a good skill to have to be able to read the wiki. Come back here if there are some part that wasn't clear. There might be something here that could be helpful.
+    Wiki</a>. It is highly recommended to go through the wiki first since it is
+a good skill to have to be able to read the wiki. Come back here if there are
+some part that wasn't clear. There might be something here that could be
+helpful.
 </p>
 
 <h3>
@@ -59,7 +47,9 @@ the following commands:
 </p>
 
 <p>
-The following command will create a swap file at /, named 'swapfile', with a size of 512Mb. Change these parameters to however you want, but make sure you will have enough swap size.
+The following command will create a swap file at /, named 'swapfile', with a
+size of 512Mb. Change these parameters to however you want, but make sure you
+will have enough swap size.
 </p>
 <pre>
 # dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress
@@ -156,21 +146,7 @@ Now you just have to add the resume hook in your /etc/mkinitcpio.conf file and r
 <p>
 That should be it! You should now be able to hibernate.
 </p>
-<small>Mon, 24 May 2021 09:56:14 -0400</small>
-</div>
-<div class='entry'>
-<h2 id='welcome-to-my-blog'>Welcome To My Blog!</h2>
-<small>[<a href='#welcome-to-my-blog'>link</a>&mdash;<a href='blog/welcome-to-my-blog.html'>standalone</a>]</small>
-<p> Hello and welcome! This is where I will be posting things that I find
-interesting enough to write about and share on the internet. It is very empty
-right now but come back later and there might be some new posts!</p>
-<small>Thu, 20 May 2021 20:56:53 -0400</small>
-</div>
-
-
-    <footer>
-        <div id="footer"></div>
-    </footer>
-
+<footer><div id='footer'></div></footer>
 </body>
+
 </html>
